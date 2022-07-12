@@ -8,7 +8,7 @@ Confluence Pre-Auth Remote Code Execution via OGNL Injection (CVE-2022-26134)
 
 ### Installation
 
-#### clone the repo:
+#### Clone the repo:
 
 	git clone https://github.com/p4b3l1t0/confusploit.git && cd confusploit
 
@@ -16,7 +16,7 @@ Confluence Pre-Auth Remote Code Execution via OGNL Injection (CVE-2022-26134)
 
 	pip3 install -r requirements.txt 
 
-#### give permissions:
+#### Give permissions:
 
 	chmod +x confusploit.py
 
