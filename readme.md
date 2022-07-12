@@ -1,4 +1,4 @@
-## This is an Script to find vulnerable servers to CVE-2022-26134 and can be used together SHODAN CLI and Bash Scripting One-Liner
+## This is a Script to find vulnerable servers to CVE-2022-26134 and can be used together SHODAN CLI and Bash Scripting One-Liner
 #### Please use only for legal and educational purposes
 
 Confluence Pre-Auth Remote Code Execution via OGNL Injection (CVE-2022-26134)
